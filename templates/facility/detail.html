@@ -1,0 +1,19 @@
+{% extends "../base_dashboard.html" %}
+{% block title %}Arike Facility Details{% endblock title %}
+{% block content %}
+<div class="flex flex-col flex-wrap px-10 py-5 m-5 h-screen items-center justify-center">
+    <h1 class="text-3xl text-gray-100 mr-10 mb-5">Facility</h1>
+    <div class="flex flex-wrap">
+            <div class="shadow bg-gray-100 rounded-lg p-4 m-2">
+                <h2 class="text-xl font-semibold hover:text-red-600"><i class="fi fi-rr-apps mr-2"></i>{{object.name}}</h2>
+                <ul class="text-md text-gray-500 p-2">
+                    <li><b>Kind:</b> {{object.kind}}</li>
+                    <li><b>Ward:</b> {{object.ward}}</li>
+                    <li><b>Address:</b> {{object.address}}</li>
+                    <li><b>Pincode:</b> {{object.pincode}}</li>
+                    <li><b>Phone Number:</b> {{object.phone}}</li>
+                </ul>
+            </div>
+    </div>
+</div>
+{% endblock content %}
